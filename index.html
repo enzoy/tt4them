@@ -7,6 +7,12 @@
       document.addEventListener('DOMContentLoaded', function() {
         console.log("ready.");
       })
+      // google "keyboard event mdn"
+      document.addEventListener('keyup', function(e) {
+        //console.log(e.key);
+        spn = document.getElementById("output_span");
+        spn.innerText += e.key;
+      })
     </script>
   </head>
   <body>
